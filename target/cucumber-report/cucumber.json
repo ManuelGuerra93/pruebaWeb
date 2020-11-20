@@ -1,13 +1,13 @@
 [
   {
-    "line": 1,
+    "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-11-19T01:15:04.127Z",
+        "start_timestamp": "2020-11-20T04:40:45.033Z",
         "before": [
           {
             "result": {
-              "duration": 8125000000,
+              "duration": 5923000000,
               "status": "passed"
             },
             "match": {
@@ -15,14 +15,14 @@
             }
           }
         ],
-        "line": 18,
-        "name": "Loguin y logout exitoso",
+        "line": 19,
+        "name": "Registro exitoso",
         "description": "",
-        "id": "login-y-logout-de-usuario;loguin-y-logout-exitoso;;2",
+        "id": "registro-de-usuario;registro-exitoso;;2",
         "after": [
           {
             "result": {
-              "duration": 90000000,
+              "duration": 118000000,
               "status": "passed"
             },
             "match": {
@@ -35,10 +35,10 @@
         "steps": [
           {
             "result": {
-              "duration": 2557000000,
+              "duration": 3305000000,
               "status": "passed"
             },
-            "line": 6,
+            "line": 7,
             "name": "valido que la web este operativa",
             "match": {
               "location": "definitions.registroDefinition.validoQueLaWebEsteOperativa()"
@@ -47,27 +47,27 @@
           },
           {
             "result": {
-              "duration": 132000000,
+              "duration": 117000000,
               "status": "passed"
             },
-            "line": 7,
-            "name": "hago clic en la opción Log in de la pantalla principal",
+            "line": 8,
+            "name": "hago clic en la opción Sign up de la pantalla principal",
             "match": {
-              "location": "definitions.loginLogoutDefinition.hagoClicEnLaOpciónLogInDeLaPantallaPrincipal()"
+              "location": "definitions.registroDefinition.hagoClicEnLaOpciónSignUpDeLaPantallaPrincipal()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 578000000,
+              "duration": 570000000,
               "status": "passed"
             },
-            "line": 8,
-            "name": "se muestra la ventana \"Log in\"",
+            "line": 9,
+            "name": "se muestra la ventana \"Sign up\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Log in\"",
+                  "val": "\"Sign up\"",
                   "offset": 22
                 }
               ],
@@ -77,29 +77,29 @@
           },
           {
             "result": {
-              "duration": 66000000,
+              "duration": 77000000,
               "status": "passed"
             },
-            "line": 9,
-            "name": "escribo el usuario \"man123\" en la ventana Log in",
+            "line": 10,
+            "name": "escribo el usuario \"man100\" en la ventana Sign up",
             "match": {
               "arguments": [
                 {
-                  "val": "\"man123\"",
+                  "val": "\"man100\"",
                   "offset": 19
                 }
               ],
-              "location": "definitions.loginLogoutDefinition.escriboElUsuarioEnLaVentanaLogIn(java.lang.String)"
+              "location": "definitions.registroDefinition.escriboElUsuarioEnLaVentanaSignUp(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 70000000,
+              "duration": 59000000,
               "status": "passed"
             },
-            "line": 10,
-            "name": "escribo el password \"123\" en la ventana Log in",
+            "line": 11,
+            "name": "escribo el password \"123\" en la ventana Sign up",
             "match": {
               "arguments": [
                 {
@@ -107,58 +107,58 @@
                   "offset": 20
                 }
               ],
-              "location": "definitions.loginLogoutDefinition.escriboElPasswordEnLaVentanaLogIn(java.lang.String)"
+              "location": "definitions.registroDefinition.escriboElPasswordEnLaVentanaSignUp(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 49000000,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "hago clic en el botón Log in en la ventana Log in",
-            "match": {
-              "location": "definitions.loginLogoutDefinition.hagoClicEnElBotónLogInEnLaVentanaLogIn()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2953000000,
+              "duration": 48000000,
               "status": "passed"
             },
             "line": 12,
-            "name": "se muestra \"Welcome man123\" en la pantalla principal",
+            "name": "hago clic en el botón Sign up en la ventana Sign up",
+            "match": {
+              "location": "definitions.registroDefinition.hagoClicEnElBotónSignUpEnLaVentanaSignUp()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1528000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "se muestra popUp con el mensaje \"Sign up successful.\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Welcome man123\"",
-                  "offset": 11
+                  "val": "\"Sign up successful.\"",
+                  "offset": 32
                 }
               ],
-              "location": "definitions.loginLogoutDefinition.seMuestraEnLaPantallaPrincipal(java.lang.String)"
+              "location": "definitions.registroDefinition.seMuestraPopUpConElMensaje(java.lang.String)"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 131000000,
+              "duration": 9000000,
               "status": "passed"
             },
-            "line": 13,
-            "name": "hago clic en la opción Log out en la pantalla principal",
+            "line": 14,
+            "name": "hago clic en el botón Aceptar",
             "match": {
-              "location": "definitions.loginLogoutDefinition.hagoClicEnLaOpciónLogOutEnLaPantallaPrincipal()"
+              "location": "definitions.registroDefinition.hagoClicEnElBotónAceptar()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 92000000,
+              "duration": 72000000,
               "status": "passed"
             },
-            "line": 14,
+            "line": 15,
             "name": "se muestra la pantalla principal",
             "match": {
               "location": "definitions.registroDefinition.seMuestraLaPantallaPrincipal()"
@@ -168,19 +168,28 @@
         ],
         "tags": [
           {
-            "name": "@HappyPath"
+            "name": "@Todo"
           },
           {
-            "name": "@Hoy"
+            "name": "@Registro"
           }
         ]
       }
     ],
-    "name": "Login y LogOut de usuario",
-    "description": "  Como usuario necesito poder Loguearme y desloguearme de la web",
-    "id": "login-y-logout-de-usuario",
+    "name": "Registro de Usuario",
+    "description": "  Como usuario necesito poder registrarme",
+    "id": "registro-de-usuario",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/loginLogOut.feature",
-    "tags": []
+    "uri": "file:src/test/resources/features/registroUsuario.feature",
+    "tags": [
+      {
+        "name": "@Todo",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
   }
 ]

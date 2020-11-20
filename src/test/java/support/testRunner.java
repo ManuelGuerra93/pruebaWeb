@@ -6,7 +6,8 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "src/test/resources/features",
-        tags = "@HappyPath and @Hoy",
+        //tags = "@LoginLogout and @Hoy",
+        tags = "@LoginLogout",
         glue = "definitions",
         plugin = {"html:target/cucumber-report/index.html","json:target/cucumber-report/cucumber.json"})
 

@@ -49,7 +49,7 @@ public class registroDefinition {
 
     @Then("se muestra popUp con el mensaje {string}")
     public void seMuestraPopUpConElMensaje(String mensaje) {
-        Assert.assertEquals("El mensaje correcto es: "+mensaje,true,signup.validarPopUp(mensaje));
+        Assert.assertEquals("El usuario ya existe.",true,signup.validarPopUp(mensaje));
     }
 
     @And("hago clic en el botón Aceptar")

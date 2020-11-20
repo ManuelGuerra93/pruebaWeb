@@ -1,7 +1,8 @@
+@Todo
 Feature: Login y LogOut de usuario
   Como usuario necesito poder Loguearme y desloguearme de la web
 
-  @HappyPath @Hoy
+  @LoginLogout @Hoy
   Scenario Outline: Loguin y logout exitoso
     Given valido que la web este operativa
     When hago clic en la opción Log in de la pantalla principal

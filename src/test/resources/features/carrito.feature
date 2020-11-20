@@ -1,8 +1,9 @@
+@Todo
 Feature: Carrito de compra
   Como usuario necesito poder agregar productos a mis carrito y en otra sección poder visualiza el producto
   que fue agregado
 
-  @HappyPath
+  @Agregar
   Scenario Outline: Agregar productos al carrito
     Given valido que la web este operativa
     When hago clic en la opción Log in de la pantalla principal

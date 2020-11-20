@@ -1,6 +1,8 @@
+@Todo
 Feature: Registro de Usuario
   Como usuario necesito poder registrarme
 
+  @Registro
   Scenario Outline: Registro exitoso
     Given valido que la web este operativa
     When hago clic en la opción Sign up de la pantalla principal
@@ -14,4 +16,4 @@ Feature: Registro de Usuario
 
     Examples:
       | usuario | password | mensaje             |
-      | man126  | 123      | Sign up successful. |
+      | man100  | 123      | Sign up successful. |
